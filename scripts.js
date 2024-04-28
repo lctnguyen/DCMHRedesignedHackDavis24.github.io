@@ -14,14 +14,17 @@ let quote = "\"Instilling Hope and Saving Lives\"";
 
 let storyN1 = "Ricardo";
 let storyC1 = "\"DCMH gave me the structure to help me rebuild... it helped me releanre \
-               how to live,\" said Ricardo, who now lives in permanent supported housing \
-               at Paul's Place. \"Everyone at DCMH invested in me, they saved my life.\"";
+              how to live,\" said Ricardo, who now lives in permanent supported housing \
+              at Paul's Place. \"Everyone at DCMH invested in me, they saved my life.\"";
 
-let storyN2 = "Ricardo";
-let storyC2 = "\"DCMH gave me the structure to help me rebuild... it helped me releanre \
-               how to live,\" said Ricardo, who now lives in permanent supported housing \
-               at Paul's Place. \"Everyone at DCMH invested in me, they saved my life.\"";
+              "\"DCM gave me the opportunity to do things around here that I found I actually have skills with \
+              like organization. DCM pushed me when I was becoming too comfortable even if I didn't feel like \
+              it was time!\"";
 
+let storyN2 = "Vanessa";
+let storyC2 = "\"DCM gave me the opportunity to do things around here that I found I actually have skills with \
+              like organization. DCM pushed me when I was becoming too comfortable even if I didn't feel like \
+              it was time!\"";
 let newsTitle = "Bill Pride Announces Retirement From DCMH";
 let newsContent = "Davis Community Meals and Housing (DCMH) executive director Bill Pride \
                   has announced he will retire after leading the nonprofit organization for \
@@ -34,6 +37,8 @@ let volunteer = "Davis Community Meals & Housing needs your help! We provide \
                 more than 700 meals a month to those in need of assistance \
                 through our programs. It could not have been done without our \
                 wonderful community and volunteers. Sign up to become a volunteer!"
+
+let endInfo = "2024 Davis Community Meals and Housing";
 
 function Loading() {
   document.getElementById("StatN1").innerHTML = statN1;
@@ -58,6 +63,8 @@ function Loading() {
   document.getElementById("newsContent").innerHTML = newsContent;
 
   document.getElementById("volunteer").innerHTML = volunteer;
+
+  document.getElementById("endInfo").innerHTML = endInfo;
 }
 
 function openForm() {
