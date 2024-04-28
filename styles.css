@@ -163,8 +163,20 @@ top:0%;
 }
 
 .MainPic .PicBox .PicMessage {
-  flex: 1 2 auto;
+  flex: 1 1.5 auto;
   font-family: Arial, Helvetica, sans-serif ;
+  margin-top: 5px;
+}
+
+.MainPic .PicBox .LearnMoreBtn {
+  height: 50px;
+  width: 120px;
+  background-color: #27666E;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
 }
 
 .Stats {
@@ -232,15 +244,16 @@ top:0%;
   flex: 1;
   display: flex;
   padding: 20px;
-  width: auto;
-  height: auto;
+}
+
+.Story .StoryImage img {
   border-radius: 50%;
 }
 
 .Story .StoryText {
+  flex: 3;
   display: flex;
   flex-direction: column;
-  flex: 3;
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -365,7 +378,7 @@ top:0%;
 }
 
 .Volunteer .VolContent .VolSignUp {
-  background-color: #023F64;
+  background-color: #27666E;
   height: 50px;
   width: 120px;
   color: white;
@@ -373,6 +386,7 @@ top:0%;
   font-size: 18px;
   border-radius: 10px;
   margin: 20px;
+  border: none
 }
 
 .Footer {
