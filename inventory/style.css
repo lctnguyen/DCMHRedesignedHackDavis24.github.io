@@ -1,3 +1,149 @@
+.Header {
+  display: flex;
+  height: 100px;
+}
+
+.Header .Logo {
+  flex: 0.25;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.Header .Logo img {
+  max-height: 100px;
+}
+
+
+.Header .Navigation {
+  padding-left: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+
+.Header .Navigation .dropdown {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+}
+
+.Header .Navigation.dropdown:hover .NagBtn {
+  background-color: lightgray;
+}
+
+.Header .Navigation .dropdown:hover .dropContent {
+  display: block;
+}
+
+.dropdown .dropContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 200px;
+}
+
+.subDrop:hover {
+  background-color: lightgray;
+}
+
+.dropdown .dropContent .subDrop {
+  color: black;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.Header .Navigation .NagBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #27666E;
+  font-weight: bold;
+}
+
+.Header .Donation {
+  flex: 0.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Donation button & form */
+
+#DonationBtn {
+  height: 30px;
+  border-radius: 40px;
+  width: 120px;
+  height: 50px;
+  background-color: #ff8C42;
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+top:0%;
+  right:0%;
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+  width: 600px;
+  padding: 10px;
+  background-color: white;
+}
+.form input[type=text], .form input[type=name] {
+  width: 88%;
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  background: #f1f1f1;
+}
+.form input[type=text]:focus, .form input[type=name]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form .butt {
+  background-color: rgb(33, 182, 33);
+  color: white;
+  margin: 5px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form .cancel {
+  background-color:rgb(173, 29, 29) ;
+}
+.form .butt:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.cash-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
 .form {
   width: 100%;
   padding: 10px;
