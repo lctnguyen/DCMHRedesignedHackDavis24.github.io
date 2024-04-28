@@ -1,22 +1,26 @@
 import pandas as pd
 
-inventory = pd.read_csv('Test.csv')
+inventory = pd.read_csv('Inventory.csv')
 
-def getItem(item, qty):
+def getItems(item, qty):
   find = inventory["Item"] == item
   inventory.loc[find, "Quantity"] -= qty
-  return inventory
+  inventory.to_csv("Inventory.csv", index=False)
 
-def addItem(item, qty):
+def addItems(item, qty):
   find = inventory["Item"] == item
   inventory.loc[find, "Quantity"] += qty
-  return inventory
+  inventory.to_csv("Inventory.csv", index=False)
 
 def sortQty():
   sorted = inventory.sort_values(by=["Quantity"])
-  return sorted
+  sorted.to_csv("Inventory.csv", index=False)
+
+def createItem(code, item, qty, priority):
+  new = {"Code": code, "Item": item, "Quantity": qty, "Priority": priority}
+  inventory.loc[len(inventory)] = new
+  inventory.to_csv("Inventory.csv", index=False)
   
-inventory = addItem("Eggs", 9)
-inventory.to_csv("Test.csv", index=False)
+createItem(10, "Pasta", 25, 0)
 
 print(inventory)
