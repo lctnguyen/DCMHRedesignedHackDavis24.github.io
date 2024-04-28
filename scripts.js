@@ -7,7 +7,3 @@ function Loading() {
   document.getElementById("StatHelped").innerHTML = helped;
   document.getElementById("StatHoused").innerHTML = housed;
 }
-
-function appear() { 
-  alert('aaaaaaaaaaaaaaaaa');
-}
