@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Davis Community Meals and Housing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+.Header {
+  display: flex;
+  height: 100px;
+}
+
+.Header .Logo {
+  flex: 0.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white ;
+}
+
+.Header .Navigation {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.Header .Navigation .NagBtn {
+  flex: 1;
+  margin: 30px;
+  text-decoration: none;
+  color: #27666e;
+  font-weight: bold;
+  font-family: 'Courier New', Courier;
+}
+
+.Header .Donation {
+  flex: 0.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.Header .Donation button {
+  height: 30px;
+  background-color: #27666e;
+  color: white;
+  border-radius: 40px;
+  width: 100px;
+}
+
+.Donation button:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 200px;
+  right: 400px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form {
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+}
+.form input[type=text], .form input[type=name] {
+  width: 88%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form input[type=text]:focus, .form input[type=name]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form .butt {
+  background-color: rgb(33, 182, 33);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+border-radius: 40px;
+}
+.form .cancel {
+  background-color:rgb(173, 29, 29) ;
+}
+.form .butt:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.cash-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+</style>
+
+<div class="Header">
+
+    <div class="Logo">
+      <img src="DCMS.png" style="width: 80px; height: auto">
+      <p>Davis Community <br> Meals & Housing<p>
+    </div>
+
+    <div class="Navigation">
+      <a class="NagBtn" id="NagBtn1" href="index.html">Home</a>
+      <a class="NagBtn" id="NagBtn2" href="TestPage/test-page.html">Voluteer</a>
+      <a class="NagBtn" id="NagBtn3" href="TestPage/test-page.html">Programs</a>
+      <a class="NagBtn" id="NagBtn4" href="TestPage/test-page.html">Events</a>
+      <a class="NagBtn" id="NagBtn5" href="TestPage/test-page.html">Contact us</a>
+    </div>
+
+    <div class="Donation">
+      <button class="button" onclick="openForm()">Donate Now!</button>
+    </div>
+  
+</div>
+
+<div class="popup" id="myForm">
+  <form action="/action_page.php" class="form">
+    <label for="Cash"><b>Cash Amount:</b></label>
+	<div class="cash-options">
+      <button type="button" class="butt" onclick="highlight()">$5</button>
+      <button type="button" class="butt">$10</button>
+      <button type="button" class="butt">$20</button>
+      <button type="button" class="butt">$50</button>
+      <button type="button" class="butt">$100</button>
+      <button type="button" class="butt">$200</button>  
+        </div>
+    <label for="Cash"><b>Your Own Cash Amount:</b></label>
+    <input type="text" placeholder="Enter Amount" name="amount" required>
+    <br>
+    <label for="psw"><b>Name (Optional)</b></label>
+    <input type="text" placeholder="First and Last" name="name">
+<br>
+     <label for="Submit"><b>Upon submitting, you will be sent to an order form. Thank you</b></label>
+    <button type="submit" class="butt">Continue</button>
+    <button type="button" class="butt cancel" onclick="closeForm()">Close</button>
+  </form>
+	</div>
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+function highlight(){
+    
+}
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

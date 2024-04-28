@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Davis Community Meals and Housing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<body onload="Loading()">
+  <div class="Header">
+
+    <div class="Logo">
+      <img src="resources/Logo.png" style="width: auto; height: auto">
+    </div>
+
+    <div class="Navigation">
+      <div class="dropdown">
+        <a class="NagBtn" id="NagBtn1" href="index.html">Program</a>
+        <div class="dropContent">
+          <a class="subDrop" href="https://daviscommunitymeals.org/transitional-housing-2/">Transitional and Bridge Housing</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/family-housing/">Family Housing</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/resource-center/">Resource Center and Day Shelter</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/meals-program/">Meals Program</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/cesar-chavez/">Permament Supportive<br>Housing-Cesar Chavez and<br>Creekside</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/pathways-to-employment/">Pathways to Employment</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/street-outreach/">Street Outreach</a>
+        </div>
+      </div>
+
+     <div class="dropdown">
+      <a class="NagBtn" id="NagBtn2" href="https://daviscommunitymeals.org/news/">News & Events</a>
+      <div class="dropContent">
+	  <a class="subDrop" href="index.html">TBH</a>
+</div>
+</div>
+      <a class="NagBtn" id="NagBtn3" href="TestPage/test-page.html">Resources</a>
+     <div class="dropdown">
+      <a class="NagBtn" id="NagBtn4" href="TestPage/test-page.html">About</a>
+      <div class="dropContent">
+          <a class="subDrop" href="https://daviscommunitymeals.org/history/">History</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/board-of-directors/">Board of Directors</a>
+          <a class="subDrop" href="https://daviscommunitymeals.org/staff/">Staff</a>
+        </div>
+      </div>
+      <a class="NagBtn" id="NagBtn5" href="https://daviscommunitymeals.org/contact-us/">Contact</a>
+    </div>
+
+    <div class="Donation">
+      <button class="Btn" id="DonationBtn" onclick="openForm()">Donate</button>
+    </div>
+
+    <div class="popup" id="myForm">
+      <form action="/action_page.php" class="form">
+        <label for="Cash"><b>Cash Amount:</b></label>
+      <div class="cash-options">
+          <button type="button" class="butt" onclick="highlight()">$5</button>
+          <button type="button" class="butt">$10</button>
+          <button type="button" class="butt">$20</button>
+          <button type="button" class="butt">$50</button>
+          <button type="button" class="butt">$100</button>
+          <button type="button" class="butt">$200</button>  
+            </div>
+        <label for="Cash"><b>Your Own Cash Amount:</b></label>
+        <input type="text" placeholder="Enter Amount" name="amount" required>
+        <br>
+        <label for="psw"><b>Name (Optional)</b></label>
+        <input type="text" placeholder="First and Last" name="name">
+    <br>
+         <label for="Submit"><b>Upon submitting, you will be sent to an order form. Thank you</b></label>
+        <button type="submit" class="butt">Continue</button>
+        <button type="button" class="butt cancel" onclick="closeForm()">Close</button>
+      </form>
+      </div>
+    
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+    function highlight(){
+        
+    }
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+  </div>
+
+  <div class="MainPic">
+    <div class="PicBox">
+      <p class="PicMessage">
+        Davis Community Meals & Housing aims to provide low-income
+        and homeless individuals and families with housing, food and 
+        human services to help rebuilding their lives.
+      </p>
+      <button class="Btn" id="DonationBtn" onclick="openForm()">Donate</button>
+    </div>
+  </div>
+
+  <div class="Stats">
+    <div class="StatElem">
+      <p class="StatNum" id="StatDonated"></p>   
+      <p class="StatTitle">Donated</p>
+    </div>
+
+    <div class="StatElem">
+      <p class="StatNum" id="StatHelped">51</p>
+      <p class="StatTitle">People Helped</p>
+    </div>
+
+    <div class="StatElem">
+      <p class="StatNum" id="StatHoused">89%</p>
+      <p class="StatTitle">Housed</p>
+    </div>
+  </div>
+
+  <div class="Quote">
+    <p>"Instilling Hope and Saving Lives"</p>
+  </div>
+
+  <h2 class="Topic">Stories</h2>
+
+  <div class="Story">
+    <img class="StoryImage" src="resources/ricardo.jpg">
+
+    <div class="StoryText">
+      <div class="StoryName">Ricardo</div>
+      <div class="StoryContent">
+        "DCMH gave me the structure to help me rebuild... it helped me releanred
+        how to live," said Ricardo, who now lives in permanent supported housing
+        at Paul's Place. "Everyone at DCMH invested in me, they saved my life."
+      </div>
+      <button class="StrBtn" id="StrBtn1">Read more</button>
+    </div>
+  </div>
+
+  <div class="Story">
+    <div class="StoryText">
+      <div class="StoryName">Ricardo</div>
+      <div class="StoryContent">
+        "DCMH gave me the structure to help me rebuild... it helped me releanred
+        how to live," said Ricardo, who now lives in permanent supported housing
+        at Paul's Place. "Everyone at DCMH invested in me, they saved my life."
+      </div>
+      <button class="StrBtn" id="StrBtn1">Read more</button>
+    </div>
+
+    <img class="StoryImage" src="resources/IMG_5186.png">
+  </div>
+
+  <h2 class="Topic">News & Events</h2>
+
+  <div class="News">
+    <div class="mainNews">
+      <div class="newsImg">
+        <img src="resources/bill-pride.jpg">
+      </div>
+      <div class="newsContent">
+        <h3>Bill Pride Announces Retirement From DCMH</h3>
+        <p>Davis Community Meals and Housing (DCMH) executive director Bill Pride
+           has announced he will retire after leading the nonprofit organization for
+           more than 22 years, the last five being years of exponential growth.</p>
+
+        <p>“I am humbled by what we, as a community, have accomplished since our
+           founding in 1991, and particularly by what we have done in the last
+           five years,” Pride said in announcing his retirement.</p>
+
+      </div>
+    </div>
+
+    <div class="sideNews">
+      <div class="side1">
+        <img src="resources/IMG_4332.png">
+      </div>
+
+      <div class="side2">
+        <img src="resources/IMG_4332.png">
+      </div>
+
+      <div class="side3">
+        <img src="resources/IMG_4332.png">
+      </div>
+
+    </div>
+  </div>
+
+  
+</body>
+</html>

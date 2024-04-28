@@ -1,0 +1,331 @@
+.Header {
+  display: flex;
+  height: 100px;
+}
+
+.Header .Logo {
+  flex: 0.25;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.Header .Navigation {
+  padding-left: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+
+.Header .Navigation .dropdown {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+}
+
+.Header .Navigation.dropdown:hover .NagBtn {
+  background-color: lightgray;
+}
+
+.Header .Navigation .dropdown:hover .dropContent {
+  display: block;
+}
+
+.dropdown .dropContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 200px;
+}
+
+.subDrop:hover {
+  background-color: lightgray;
+}
+
+.dropdown .dropContent .subDrop {
+  color: black;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.Header .Navigation .NagBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #27666E;
+  font-weight: bold;
+}
+
+.Header .Donation {
+  flex: 0.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Donation button & form */
+
+#DonationBtn {
+  height: 30px;
+  border-radius: 40px;
+  width: 120px;
+  height: 50px;
+  background-color: #ff8C42;
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+top:0%;
+  right:0%;
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+  width: 600px;
+  padding: 10px;
+  background-color: white;
+}
+.form input[type=text], .form input[type=name] {
+  width: 88%;
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  background: #f1f1f1;
+}
+.form input[type=text]:focus, .form input[type=name]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form .butt {
+  background-color: rgb(33, 182, 33);
+  color: white;
+  margin: 5px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form .cancel {
+  background-color:rgb(173, 29, 29) ;
+}
+.form .butt:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.cash-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Middle section: Main image, stats */
+
+.MainPic {
+  display: flex;
+  align-items: end;
+  height: 320px;
+  background-image: url("resources/IMG_4332.png");
+  background-size: 100% 100%;
+  justify-content: right;
+}
+
+.MainPic .PicBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.2;
+  height: 200px;
+  padding: 10px;
+  background-color: rgb(255 255 255 / 50%);
+  margin-right: 50px;
+  border-radius: 5%;
+}
+
+.MainPic .PicBox .PicMessage {
+  flex: 1 2 auto;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+.Stats {
+  display: flex;
+  height: 200px;
+  background-color: #023F64;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Stats .StatElem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  color: white;
+}
+
+.Stats .StatElem .StatNum {
+  flex: 1 1 auto;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif ;
+  margin: 0px;
+}
+
+.Stats .StatElem .StatTitle {
+  flex: 1 0.5 auto;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: 20px;
+}
+
+.Quote {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Quote p {
+  font-size: 60px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #023F64;
+}
+
+/* Stories, news, etc */
+
+.Topic {
+  margin-top: 50px;
+  margin-left: 60px;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #023F64;
+}
+
+.Story {
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 250px;
+}
+
+.Story .StoryImage {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+.Story .StoryText {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Story .StoryText .StoryName {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Story .StoryText .StoryContent {
+  height: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lemonchiffon;
+}
+
+.Story .StoryText .StrBtn {
+  background-color: #27666E;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.News {
+  display: flex;
+  height: 700px;
+  margin: 40px;
+}
+
+.News .mainNews {
+  flex: 2;
+  background-color: #FFF0CF;
+  border-radius: 10px;
+  display: flex;  
+  flex-direction: column;
+}
+
+.News .mainNews .newsImg {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.News .mainNews .newsImg img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.News .mainNews .newsContent {
+  flex: 1 1 auto;
+  padding: 40px;
+}
+
+.News .mainNews .newsContent h3 {
+  color: #023F64;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.News .mainNews .newsContent p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.News .sideNews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.News .sideNews img {
+  flex: 1 1 auto;
+  padding: 5px;
+  width: 80%;
+}
+
