@@ -8,9 +8,32 @@ let statT3 = "UNITS OF HOUSING PROVIDED TO FAMILIES AND INDIVIDUALS";
 
 let mainPicMsg = "Monetary donations are not the only way to help us in our mission to provide low-income and\
                   homeless individuals and families with housing, food and human services to help them rebuild\
-                  their lives."
+                  their lives.";
 
-let quote = "\"Instilling Hope and Saving Lives\""
+let quote = "\"Instilling Hope and Saving Lives\"";
+
+let storyN1 = "Ricardo";
+let storyC1 = "\"DCMH gave me the structure to help me rebuild... it helped me releanre \
+               how to live,\" said Ricardo, who now lives in permanent supported housing \
+               at Paul's Place. \"Everyone at DCMH invested in me, they saved my life.\"";
+
+let storyN2 = "Ricardo";
+let storyC2 = "\"DCMH gave me the structure to help me rebuild... it helped me releanre \
+               how to live,\" said Ricardo, who now lives in permanent supported housing \
+               at Paul's Place. \"Everyone at DCMH invested in me, they saved my life.\"";
+
+let newsTitle = "Bill Pride Announces Retirement From DCMH";
+let newsContent = "Davis Community Meals and Housing (DCMH) executive director Bill Pride \
+                  has announced he will retire after leading the nonprofit organization for \
+                  more than 22 years, the last five being years of exponential growth. \n \
+                  \“I am humbled by what we, as a community, have accomplished since our \
+                  founding in 1991, and particularly by what we have done in the last \
+                  five years,\” Pride said in announcing his retirement.";
+
+let volunteer = "Davis Community Meals & Housing needs your help! We provide \
+                more than 700 meals a month to those in need of assistance \
+                through our programs. It could not have been done without our \
+                wonderful community and volunteers. Sign up to become a volunteer!"
 
 function Loading() {
   document.getElementById("StatN1").innerHTML = statN1;
@@ -24,4 +47,15 @@ function Loading() {
   document.getElementById("mainPicMsg").innerHTML = mainPicMsg;
 
   document.getElementById("quote").innerHTML = quote;
+
+  document.getElementById("storyN1").innerHTML = storyN1;
+  document.getElementById("storyC1").innerHTML = storyC1;
+
+  document.getElementById("storyN2").innerHTML = storyN2;
+  document.getElementById("storyC2").innerHTML = storyC2;
+
+  document.getElementById("newsTitle").innerHTML = newsTitle;
+  document.getElementById("newsContent").innerHTML = newsContent;
+
+  document.getElementById("volunteer").innerHTML = volunteer;
 }
