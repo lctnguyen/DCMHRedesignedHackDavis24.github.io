@@ -1,9 +1,9 @@
-Code,Item,Quantity,Priority
-1,Potato,8,0
-2,Bread,10,0
-3,Egg,39,0
-4,Fruit,12,1
-5,Ramen,49,0
-6,Ham,37,0
-7,Rice,7,1
-10,Pasta,25,0
+Code,Item,Quantity,Priority, Taken, Demand
+1,Potato,0,0,21,1
+2,Bread,10,0,5,0
+3,Egg,29,0,2,0
+4,Fruit,12,1,6,0
+5,Ramen,49,0,30,1
+6,Ham,37,0,6,0
+7,Rice,7,1,25,1
+10,Pasta,25,0,4,0
