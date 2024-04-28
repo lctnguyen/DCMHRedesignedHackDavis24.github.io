@@ -338,3 +338,46 @@ top:0%;
   margin-top: 0px;
 }
 
+.Volunteer {
+  display: flex;
+  margin: 40px;
+  min-height: 300px;
+}
+
+.Volunteer .VolImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.Volunteer .VolImg img {
+  border-radius: 10px;
+}
+
+.Volunteer .VolContent {
+  flex: 1;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Volunteer .VolContent .VolSignUp {
+  background-color: #023F64;
+  height: 50px;
+  width: 120px;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.Footer {
+  height: 180px;
+  background-color: #023F64;
+  margin-top: 50px;
+}
+
