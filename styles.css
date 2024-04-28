@@ -169,7 +169,7 @@ top:0%;
 
 .Stats {
   display: flex;
-  height: 200px;
+  height: 210px;
   background-color: #023F64;
   align-items: center;
   justify-content: space-between;
@@ -273,7 +273,7 @@ top:0%;
 
 .News {
   display: flex;
-  height: 700px;
+  min-height: 800px;
   margin: 40px;
 }
 
